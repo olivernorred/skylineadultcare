@@ -4,12 +4,14 @@ document.querySelectorAll('.parallax').forEach(el => {
 
 	// el.style.position = "relative"
 	let scrollfactor = el.getAttribute('parallax')
-	
+
 	addEventListener('scroll', ()=> {
-		requestAnimationFrame(()=> {
-			el.style.transform = "translate(0, " + -scrollfactor * window.scrollY + "px)"
-			// el.style.top = -scrollfactor * window.scrollY + "px"
-		})
+		if(window.scrollY < 500) {
+			requestAnimationFrame(()=> {
+				el.style.transform = "translate(0, " + -scrollfactor * window.scrollY + "px)"
+				// el.style.top = -scrollfactor * window.scrollY + "px"
+			})
+		}
 	})
 })
 
