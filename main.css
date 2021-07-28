@@ -64,11 +64,12 @@ a:hover, a:active {
 }
 
 #nav {
-	display: flex;
 	gap: .75rem;
 	width: fit-content;
+	max-width: 500px;
 	margin: auto;
 	font-style: italic;
+	text-align: center;
 }
 
 
