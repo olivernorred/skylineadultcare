@@ -3,6 +3,28 @@
 	font-family: editorial new;
 	src: url(fonts/EditorialNew-Variable.ttf);
 }
+@font-face {
+	font-family: 'Courier Prime';
+	src: url(fonts/CourierPrime-Regular.ttf);
+}
+@font-face {
+	font-family: 'Poppins';
+	src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+	font-family: 'Poppins Extra Light';
+	src: url(fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+	font-family: 'Poppins';
+	font-style: italic;
+	src: url(fonts/Poppins-Italic.ttf);
+}
+@font-face {
+	font-family: 'Poppins Extra Light';
+	font-style: italic;
+	src: url(fonts/Poppins-ExtraLightItalic.ttf);
+}
 
 * {
 	margin: 0;
@@ -18,7 +40,7 @@
 }
 
 body {
-	font-family: 'Source Serif Pro', serif;
+	font-family: 'Poppins', sans-serif;
 	background-attachment: fixed;
 }
 
@@ -29,7 +51,10 @@ h1, h2, h3, h4, h5, h6 {
 
 img {
 	width: 100%;
+	max-width: 1200px;
 	max-height: 100vh;
+	display: block;
+	margin: auto;
 	object-fit: cover;
 }
 
@@ -47,7 +72,7 @@ a:hover, a:active {
 }
 .page-header {
 	text-align: center;
-	/* font-family: 'Playfair Display'; */
+	font-family: 'Poppins Extra Light';
 	/* font-style: italic; */
 	font-size: clamp(1.5rem, 9vw, 3rem );
 }
@@ -68,7 +93,8 @@ a:hover, a:active {
 	width: fit-content;
 	max-width: 500px;
 	margin: auto;
-	font-style: italic;
+	font-family: 'Poppins Extra Light';
+	/* font-style: italic; */
 	text-align: center;
 }
 
@@ -80,7 +106,7 @@ a:hover, a:active {
 	display: block;
 }
 .image-fullwidth {
-	margin: max(2rem, 6%) 0;
+	margin: max(2rem, 6%) auto;
 	box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
 }
 .image-fullwidth:first-of-type {
@@ -97,10 +123,9 @@ a:hover, a:active {
 
 .tagline {
 	margin: 0;
-	/* font-size: 2rem; */
+	font-family: 'Poppins Extra Light';
 	font-size: clamp(1.4rem, 7vw, 2rem );
 	line-height: 1.1;
-	font-style: italic;
 }
 
 
@@ -114,8 +139,8 @@ p:not(:first-child) {
 }
 
 .promoparagraph::first-letter {
+	font-family: 'Poppins Extra Light';
 	font-size: 2.92rem;
-	font-weight: 300;
 	line-height: 0.9;
 	float: left;
 	padding-right: 3px;
@@ -124,6 +149,10 @@ p:not(:first-child) {
 .provisionslist {
 	list-style-type: '\2B29  ';
 	list-style-position: inside;
+}
+
+.typewriter {
+	font-family: 'Courier Prime';
 }
 
 td:nth-of-type(2) {
