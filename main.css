@@ -53,8 +53,6 @@ img {
 	width: 100%;
 	max-width: 1200px;
 	max-height: 100vh;
-	display: block;
-	margin: auto;
 	object-fit: cover;
 }
 
