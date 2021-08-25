@@ -6,19 +6,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Skyline Adult Care</title>
 	<link rel="stylesheet" href="main.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
 
 <header id="header" class="" parallax="-0.4">
-	<h1 class="page-header"> Skyline Adult Care </h1>
+	<!-- <h1 class="page-header"> Skyline Adult Care </h1> -->
+	<div id="skyline-header-logo"><img src="images/skylineheaderlogo.svg" alt="Skyline Adult Care"></div>
 	<nav id="nav">
 		<a href="#contact">Contact</a>
 	</nav>
 </header>
 
 <main id="content">
-	<img class="image-fullwidth" parallax="0.2" src="jpgs/skyline-2.jpg" alt="Skyline Adult Care interior">
+	<img class="image-fullwidth" parallax="0.2" src="jpgs/skyline-2.jpg" alt="Skyline Adult Care interior" data-aos="fade-up"
+     
+     data-aos-delay="300"
+     data-aos-offset="0">
 	
 	<section class="promosection">
 		<h2 class="tagline">Providing exceptional care for your loved ones.</h2>
@@ -31,7 +36,10 @@
 	</section>
 	
 
-	<img class="image-fullwidth" src="jpgs/skyline-3.jpg" alt="Skyline Adult Care deck">
+	<img class="image-fullwidth" src="jpgs/skyline-3.jpg" alt="Skyline Adult Care deck" data-aos="fade-up"
+     
+     data-aos-delay="300"
+     data-aos-offset="0">
 	
 	<section id="testimonial" class="promosection">
 		<h2 class="tagline">Testimonial</h2>
@@ -54,7 +62,10 @@
 		</p>
 	</section>
 
-	<img src="jpgs/skyline-4.jpg" alt="Skyline adult care deck" class="image-fullwidth">
+	<img src="jpgs/skyline-4.jpg" alt="Skyline adult care deck" class="image-fullwidth" data-aos="fade-up"
+     
+     data-aos-delay="300"
+     data-aos-offset="0">
 
 	<section id="about" class="promosection">
 		<h2 class="tagline">About the owner: Adriana Luca</h2>
@@ -64,10 +75,13 @@
 		</p>
 	</section>
 
-	<img src="jpgs/skyline-1.jpg" alt="Skyline adult care interior" class="image-fullwidth">
+	<img src="jpgs/skyline-1.jpg" alt="Skyline adult care interior" class="image-fullwidth" data-aos="fade-up"
+     
+     data-aos-delay="300"
+     data-aos-offset="0">
 
 	<section id="provisions" class="promosection">
-		<h2 class="tagline">Home provides:</h2>
+		<h2 class="tagline">Provisions</h2>
 		<br>
 		<ul class="provisionslist">
 			<li>24 hour care</li>
@@ -83,16 +97,21 @@
 		</ul>
 	</section>
 
-	<img src="jpgs/skyline-5.jpg" alt="The view from the Skyline adult care home deck!" class="image-fullwidth">
+	<img src="jpgs/skyline-5.jpg" alt="The view from the Skyline adult care home deck!" class="image-fullwidth" data-aos="fade-up"
+     
+     data-aos-delay="100">
 
 	<section id="contact" class="promosection">
 		<h2 class="tagline">Contact us</h2>
 		<br>
 		<p>
 			<em>Address:</em> <br>
-			Skyline Adult Care <br>
-			5795 Skyline Dr. <br>
-			West Linn, OR 97068
+
+			<blockquote class="address">
+				Skyline Adult Care <br>
+				5795 Skyline Dr. <br>
+				West Linn, OR 97068
+			</blockquote>
 		</p>
 		<br>
 			
@@ -130,4 +149,8 @@
 </body>
 
 <script src="parallax.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
 </html>
