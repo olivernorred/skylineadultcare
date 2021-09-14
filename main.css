@@ -159,7 +159,7 @@ a:hover, a:active {
 .tagline {
 	margin: 0;
 	font-family: 'Literata';
-	font-variation-settings: 'wght' 200, 'opsz' 36;
+	font-variation-settings: 'wght' 600, 'opsz' 36;
 	font-style: italic;
 	font-size: clamp(1.4rem, 7vw, 2rem );
 	line-height: 1.2;
