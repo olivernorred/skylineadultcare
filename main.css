@@ -77,7 +77,7 @@ a:hover, a:active {
 #header {
 	padding-top: clamp(3rem, 10vw, 6rem);
 	margin-bottom: clamp(3rem, 10vw, 6rem);
-	background: linear-gradient(skyblue, white 50%, white);
+	background: linear-gradient(#fbc4a7, white 50%, white);
 }
 .page-header {
 	text-align: center;
